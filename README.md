@@ -38,10 +38,10 @@ Antes de começar, você precisará ter o Node.js e o npm (ou yarn) instalados n
 ### Passos para rodar
 
 1. Clone o repositório:
-  ```bash
-    git clone https://github.com/thauanyAA/dtmoney.git
-    cd dtmoney
-  ```
+    ```bash
+      git clone https://github.com/thauanyAA/dtmoney.git
+      cd dtmoney
+    ```
 
 2. Instale as dependências:
   
@@ -68,9 +68,9 @@ Antes de começar, você precisará ter o Node.js e o npm (ou yarn) instalados n
     ```
 
 4. Acesse a aplicação em seu navegador:
-  ```bash
-  http://localhost:3000
-  ```
+    ```bash
+    http://localhost:3000
+    ```
 
 ### Estrutura do Projeto
 A estrutura de diretórios deste projeto segue a convenção típica para aplicações React com TypeScript:
