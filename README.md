@@ -55,20 +55,20 @@ Antes de começar, você precisará ter o Node.js e o npm (ou yarn) instalados n
   ```
 
 3. Inicie o servidor de desenvolvimento:
-  * Com npm:
+  a. Com npm:
   ```bash
   npm run dev
   ```
 
-  * Ou com yarn:
-  ```bash
+  b. Ou com yarn:
+  `
   yarn dev
-  ```
+  `
 
 4. Acesse a aplicação em seu navegador:
-  ```bash
+  `
   http://localhost:3000
-  ```
+  `
 
 ### Estrutura do Projeto
 A estrutura de diretórios deste projeto segue a convenção típica para aplicações React com TypeScript:
