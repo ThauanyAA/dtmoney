@@ -12,9 +12,17 @@
       "id": 2,
       "createdAt": "2025-06-01",
       "type": "outcome",
-      "category": "alimentacao",
+      "category": "Alimentacao",
       "description": "Hamburguer",
       "price": 50.00
+    },
+    {
+      "id": 3,
+      "createdAt": "2025-06-11",
+      "type": "outcome",
+      "category": "Educação",
+      "description": "Assinatura Bootcamp de React 10x",
+      "price": 300.00
     }
   ]
 }
