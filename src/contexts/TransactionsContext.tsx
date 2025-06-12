@@ -1,4 +1,5 @@
-import { createContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { createContext } from 'use-context-selector';
 import type { ReactNode } from 'react';
 import { api } from '../lib/axios';
 
