@@ -4,7 +4,6 @@ import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Controller, useForm } from 'react-hook-form';
 import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton } from './styles';
-import { api } from '../../lib/axios';
 import { useContext } from 'react';
 import { TransactionsContext } from '../../contexts/TransactionsContext';
 
