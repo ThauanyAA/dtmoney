@@ -4,6 +4,9 @@ import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Controller, useForm } from 'react-hook-form';
 import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton } from './styles';
+import { api } from '../../lib/axios';
+import { useContext } from 'react';
+import { TransactionsContext } from '../../contexts/TransactionsContext';
 
 const newTransactionFormSchema = z.object({
   description: z.string().min(1, 'Descrição é obrigatória'),
@@ -16,18 +19,29 @@ const newTransactionFormSchema = z.object({
 
 type NewTransactionFormInputs = z.infer<typeof newTransactionFormSchema>;
 export function NewTransactionModal() {
+  const { createTransaction } = useContext(TransactionsContext);
+
   const {
     control,
     register,
     handleSubmit,
     formState: { isSubmitting },
+    reset,
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
   });
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
-    await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate a network request
-    console.log(data);
+    const { description, price, category, type } = data
+    
+    await createTransaction({
+      description,
+      price,
+      category,
+      type,
+    });
+
+    reset(); // Reset the form after submission
   }
 
   return (
