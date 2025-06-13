@@ -39,6 +39,14 @@
       "type": "outcome",
       "createdAt": "2025-06-12T19:31:12.247Z",
       "id": 5
+    },
+    {
+      "description": "Mercado",
+      "price": 50,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-06-12T20:47:37.124Z",
+      "id": 6
     }
   ]
 }
